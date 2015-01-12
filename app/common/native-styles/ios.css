@@ -28,7 +28,7 @@ tab-bar tab-bar-item {
   color: #b0b1b4;
   font-family: "Avenir";
   font-size: 10px;
-}
+}c
 
 tab-bar tab-bar-item:selected {
   color: #1596f7;
@@ -39,7 +39,7 @@ tab-bar-item#settings {
 }
 
 tab-bar-item#index {
-  background-image: url(icons/home.svg);
+  background-image: url(icons/shortcuts.svg);
 }
 
 tab-bar-item#internet {

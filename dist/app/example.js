@@ -12,7 +12,14 @@
 
 (function() {
   angular.module('example').controller('SettingsController', function($scope, supersonic) {
-    return $scope.navbarTitle = "Settings";
+    return $scope.navbarTitle = "Blend Modes";
+  });
+
+}).call(this);
+
+(function() {
+  angular.module('example').controller('ToolShortcutsController', function($scope, supersonic) {
+    return $scope.navbarTitle = "Shortcuts";
   });
 
 }).call(this);

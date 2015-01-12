@@ -5,17 +5,17 @@ module.exports =
   # See styling options for tabs and other native components in app/common/native-styles/ios.css or app/common/native-styles/android.css
   tabs: [
     {
-      title: "Index"
+      title: "Shortcuts"
       id: "index"
-      location: "example#getting-started" # Supersonic module#view type navigation
+      location: "example#photoshop-tools-shortcuts" # Supersonic module#view type navigation
     }
     {
-      title: "Settings"
+      title: "Blend Modes"
       id: "settings"
       location: "example#settings"
     }
     {
-      title: "Internet"
+      title: "Contact"
       id: "internet"
       location: "http://google.com" # URLs are supported!
     }
@@ -35,13 +35,13 @@ module.exports =
     }
   ]
 
-  drawers:
-     left:
-       id: "leftDrawer"
-       location: "example#drawer"
-       showOnAppLoad: false
-    options:
-       animation: "swingingDoor"
+#  drawers:
+#     left:
+#       id: "leftDrawer"
+#       location: "example#drawer"
+#       showOnAppLoad: false
+#    options:
+#       animation: "swingingDoor"
   #
   # initialView:
   #   id: "initialView"

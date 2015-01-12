@@ -31,6 +31,13 @@
 </head>
 <body ng-app="example">
 
+<div class="padding" ng-controller="SettingsController">
+<super-navbar>
+    <super-navbar-title>
+      Photoshop Shortcuts
+    </super-navbar-title>
+  </super-navbar>
+
 <!--tools-->
 
 <div class="list">
@@ -41,11 +48,6 @@
     Move
     <span class="item-note">V</span>
   </a>
-    
-  <a class="item item-icon-left item-icon-right">
-    <i class=“icon super-navicon” onclick=“supersonic.ui.drawers.open(leftDrawer);”></i>
-    Drawer
-  </a>    
     
   <a class="item item-icon-left item-icon-right" href="#">
     <i class="icon super-chatbubble-working"></i>
@@ -416,12 +418,6 @@
 
 
 <div class="padding">
-
-  <super-navbar>
-    <super-navbar-title>
-      Welcome to Supersonic!
-    </super-navbar-title>
-  </super-navbar>
     
 
     
@@ -442,7 +438,9 @@
   <h2>Get in touch with us!</h2>
 
   <p>Feel free to contact us at <a href="mailto:contact@appgyver.com">contact@appgyver.com</a>, we would love to get your feedback!</p>
-
+    
+    <a class="button button-icon icon super-social-twitter"></a>
+    
 </div>
 
 

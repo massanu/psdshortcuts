@@ -2,119 +2,65 @@
 
   <super-navbar>
     <super-navbar-title>
-      Settings
+      Blend Modes
     </super-navbar-title>
   </super-navbar>
 
-  <h3>Supersonic CSS Components</h3>
+  <h3>Blending Modes</h3>
 
-  <p>Below are some example Supersonic CSS components for you to study and play around with.</p>
+    
+<p><strong>Normal</strong> Edits or paints each pixel to make it the result color. This is the default mode. (Normal mode is called Threshold when you’re working with a bitmapped or indexed-color image.)</p>
+    
+<p><strong>Dissolve</strong> Edits or paints each pixel to make it the result color. However, the result color is a random replacement of the pixels with the base color or the blend color, depending on the opacity at any pixel location.</p>
+    
+<p><strong>Darken</strong> Looks at the color information in each channel and selects the base or blend color—whichever is darker—as the result color. Pixels lighter than the blend color are replaced, and pixels darker than the blend color do not change.</p>    
+    
+<p><strong>Multiply</strong> Looks at the color information in each channel and multiplies the base color by the blend color. The result color is always a darker color. Multiplying any color with black produces black. Multiplying any color with white leaves the color unchanged. When you’re painting with a color other than black or white, successive strokes with a painting tool produce progressively darker colors. The effect is similar to drawing on the image with multiple marking pens.</p>
 
-  <h2>I <span class="assertive">&lt;3</span>...</h2>
+<p><strong>Color Burn</strong> Looks at the color information in each channel and darkens the base color to reflect the blend color by increasing the contrast between the two. Blending with white produces no change.</p>
 
-  <ul class="list">
-    <li class="item item-toggle">
-       HTML5
-       <label class="toggle toggle-assertive">
-         <input type="checkbox">
-         <div class="track">
-           <div class="handle"></div>
-         </div>
-       </label>
-    </li>
+<p><strong>Linear Burn</strong> Looks at the color information in each channel and darkens the base color to reflect the blend color by decreasing the brightness. Blending with white produces no change.</p>
 
-    <li class="item item-toggle">
-       CoffeeScript
-       <label class="toggle toggle-royal">
-         <input type="checkbox">
-         <div class="track">
-           <div class="handle"></div>
-         </div>
-       </label>
-    </li>
+<p><strong>Lighten</strong> Looks at the color information in each channel and selects the base or blend color—whichever is lighter—as the result color. Pixels darker than the blend color are replaced, and pixels lighter than the blend color do not change.</p>  
+    
+<p><strong>Screen</strong> Looks at each channel’s color information and multiplies the inverse of the blend and base colors. The result color is always a lighter color. Screening with black leaves the color unchanged. Screening with white produces white. The effect is similar to projecting multiple photographic slides on top of each other.</p>  
 
-    <li class="item item-toggle">
-       SASS
-       <label class="toggle toggle-balanced">
-         <input type="checkbox">
-         <div class="track">
-           <div class="handle"></div>
-         </div>
-       </label>
-    </li>
+<p><strong>Color Dodge</strong> Looks at the color information in each channel and brightens the base color to reflect the blend color by decreasing contrast between the two. Blending with black produces no change.</p>  
+    
+<p><strong>Linear Dodge (add)</strong> Looks at the color information in each channel and brightens the base color to reflect the blend color by increasing the brightness. Blending with black produces no change.</p>  
+    
+<p><strong>Overlay</strong> Multiplies or screens the colors, depending on the base color. Patterns or colors overlay the existing pixels while preserving the highlights and shadows of the base color. The base color is not replaced, but mixed with the blend color to reflect the lightness or darkness of the original color.</p> 
+    
+<p><strong>Soft Light</strong>Darkens or lightens the colors, depending on the blend color. The effect is similar to shining a diffused spotlight on the image. If the blend color (light source) is lighter than 50% gray, the image is lightened as if it were dodged. If the blend color is darker than 50% gray, the image is darkened as if it were burned in. Painting with pure black or white produces a distinctly darker or lighter area, but does not result in pure black or white.</p>
+    
+<p><strong>Hard Light</strong> Multiplies or screens the colors, depending on the blend color. The effect is similar to shining a harsh spotlight on the image. If the blend color (light source) is lighter than 50% gray, the image is lightened, as if it were screened. This is useful for adding highlights to an image. If the blend color is darker than 50% gray, the image is darkened, as if it were multiplied. This is useful for adding shadows to an image. Painting with pure black or white results in pure black or white.</p>
+    
+<p><strong>Vivid Light</strong> Burns or dodges the colors by increasing or decreasing the contrast, depending on the blend color. If the blend color (light source) is lighter than 50% gray, the image is lightened by decreasing the contrast. If the blend color is darker than 50% gray, the image is darkened by increasing the contrast.</p>    
+    
+<p><strong>Linear Light</strong> Burns or dodges the colors by decreasing or increasing the brightness, depending on the blend color. If the blend color (light source) is lighter than 50% gray, the image is lightened by increasing the brightness. If the blend color is darker than 50% gray, the image is darkened by decreasing the brightness.</p>
 
-    <li class="item item-toggle">
-       Native performance
-       <label class="toggle toggle-calm">
-         <input type="checkbox">
-         <div class="track">
-           <div class="handle"></div>
-         </div>
-       </label>
-    </li>
-  </ul>
+<p><strong>Pin Light</strong> Replaces the colors, depending on the blend color. If the blend color (light source) is lighter than 50% gray, pixels darker than the blend color are replaced, and pixels lighter than the blend color do not change. If the blend color is darker than 50% gray, pixels lighter than the blend color are replaced, and pixels darker than the blend color do not change. This is useful for adding special effects to an image.</p>
 
-  <h2>Drag some sliders</h2>
+<p><strong>Hard Mix</strong> Adds the red, green and blue channel values of the blend color to the RGB values of the base color. If the resulting sum for a channel is 255 or greater, it receives a value of 255; if less than 255, a value of 0. Therefore, all blended pixels have red, green, and blue channel values of either 0 or 255. This changes all pixels to primary additive colors (red, green, or blue), white, or black.
+For CMYK images, Hard Mix changes all pixels to the primary subtractive colors (cyan, yellow, or magenta), white, or black. The maximum color value is 100.</p>
 
-  <div class="list">
-    <div class="item range range-positive">
-      <i class="icon super-ios7-sunny-outline"></i>
-      <input type="range" name="volume" min="0" max="100" value="33">
-      <i class="icon super-ios7-sunny"></i>
-    </div>
+<p><strong>Difference</strong> Looks at the color information in each channel and subtracts either the blend color from the base color or the base color from the blend color, depending on which has the greater brightness value. Blending with white inverts the base color values; blending with black produces no change.</p>  
+    
+<p><strong>Exclusion</strong> Creates an effect similar to but lower in contrast than the Difference mode. Blending with white inverts the base color values. Blending with black produces no change.</p>  
 
-    <div class="item range range-assertive">
-      <i class="icon super-ios7-star-outline"></i>
-      <input type="range" name="bass" min="0" max="100" value="90">
-      <i class="icon super-ios7-star"></i>
-    </div>
+<p><strong>Subtract</strong> Looks at the color information in each channel and subtracts the blend color from the base color. In 8- and 16-bit images, any resulting negative values are clipped to zero.</p>  
+    
+<p><strong>Divide</strong> Looks at the color information in each channel and divides the blend color from the base color.</p>  
+    
+<p><strong>Hue</strong> Creates a result color with the luminance and saturation of the base color and the hue of the blend color.</p>     
 
-    <div class="item range range-energized">
-      <i class="icon super-ios7-heart-outline"></i>
-      <input type="range" name="treble" min="0" max="100" value="66">
-      <i class="icon super-ios7-heart"></i>
-    </div>
+<p><strong>Saturation</strong> Creates a result color with the luminance and hue of the base color and the saturation of the blend color. Painting with this mode in an area with no (0) saturation (gray) causes no change.</p>  
 
-    <div class="item range range-balanced">
-      <i class="icon super-ios7-bolt-outline"></i>
-      <input type="range" name="awesomeness" min="0" max="100" value="50">
-      <i class="icon super-ios7-bolt"></i>
-    </div>
-
-    <div class="item range range-royal">
-      <i class="icon super-ios7-wineglass-outline"></i>
-      <input type="range" name="unicorns" min="0" max="100" value="10">
-      <i class="icon super-ios7-wineglass"></i>
-    </div>
-  </div>
-
-  <h2>Check some checkboxes</h2>
-
-  <ul class="list">
-    <li class="item item-checkbox">
-       <label class="checkbox">
-         <input type="checkbox">
-       </label>
-       X-Wing
-    </li>
-
-    <li class="item item-checkbox">
-       <label class="checkbox checkbox-assertive">
-         <input type="checkbox">
-       </label>
-       TIE Fighter
-    </li>
-
-    <li class="item item-checkbox">
-       <label class="checkbox checkbox-calm">
-         <input type="checkbox">
-       </label>
-       A-Wing
-    </li>
-  </ul>
-
-  <p>
-    Discover more CSS components and Supersonic awesomeness at <a onclick="supersonic.app.openURL('http://docs.appgyver.com')" href="#">http://docs.appgyver.com</a>
-  </p>
-
-</div>
+<p><strong>Color</strong> Creates a result color with the luminance of the base color and the hue and saturation of the blend color. This preserves the gray levels in the image and is useful for coloring monochrome images and for tinting color images.</p>  
+    
+<p><strong>Luminosity</strong> Creates a result color with the hue and saturation of the base color and the luminance of the blend color. This mode creates the inverse effect of Color mode.</p>  
+    
+<p><strong>Lighter Color</strong> Compares the total of all channel values for the blend and base color and displays the higher value color. Lighter Color does not produce a third color, which can result from the Lighten blend, because it chooses the highest channel values from both the base and blend color to create the result color.</p> 
+    
+<p><strong>Darker Color</strong> Compares the total of all channel values for the blend and base color and displays the lower value color. Darker Color does not produce a third color, which can result from the Darken blend, because it chooses the lowest channel values from both the base and the blend color to create the result color.</p>     
+    
